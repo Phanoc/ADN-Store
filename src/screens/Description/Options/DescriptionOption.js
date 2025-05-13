@@ -1,6 +1,6 @@
 import React from 'react';
 import SizeSelector from './SizeSelector';
-import './DescriptionOprion.css';
+import './DescriptionOption.css';
 
 const DescriptionOption = (props) => {
 	return (

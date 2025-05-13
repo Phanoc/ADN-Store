@@ -9,6 +9,7 @@ import Grid from './components/UI/Grid';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Description from './screens/Description/Description';
 import Welcome from './screens/Welcome/Welcome';
+import Cart from './screens/Cart/Cart';
 
 const App = () => {
 	return (
@@ -17,10 +18,8 @@ const App = () => {
 			<Routes>
 				<Route path='/' element={<Welcome />}></Route>
 				<Route path='/home' element={<Home />}></Route>
-				<Route
-					path='/description/:id'
-					element={<Description />}
-				></Route>
+				<Route path='/description/:id' element={<Description />}></Route>
+				<Route path='/cart' element={<Cart />}></Route>
 			</Routes>
 		</Router>
 	);

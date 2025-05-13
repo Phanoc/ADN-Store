@@ -6,6 +6,11 @@ export const AppProvider = ({ children }) => {
 	const [club, setClub] = useState('Chelsea');
 	const [globalSearchTerm, setGlobalSearchTerm] = useState(''); // Thêm state cho tìm kiếm toàn cục
 	const [cartCount, setCartCount] = useState(0); // Add cartCount state
+	const [cartItems, setCartItems] = useState([]);
+
+	const addToCart = (item) => {
+		setCartItems((prevItems) => [...prevItems, item]);
+	};
 
 	return (
 		<AppContext.Provider
@@ -16,6 +21,9 @@ export const AppProvider = ({ children }) => {
 				setGlobalSearchTerm,
 				cartCount,
 				setCartCount,
+				cartItems,
+				setCartItems,
+				addToCart,
 			}}
 		>
 			{children}

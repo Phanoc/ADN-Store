@@ -8,7 +8,7 @@ import { Link, useLocation } from 'react-router-dom';
 import React, { useContext, useEffect, useState } from 'react';
 
 const Items = ({ id, name, description, image, price, s_image, hideCart }) => {
-	const { club, setCartCount } = useContext(AppContext);
+	const { club, setCartCount, addToCart } = useContext(AppContext);
 	const location = useLocation();
 	const fromWelcome = location.pathname === '/' ? true : false;
 
@@ -18,10 +18,17 @@ const Items = ({ id, name, description, image, price, s_image, hideCart }) => {
 
 	const addProductHandler = (event) => {
 		event.preventDefault();
-		const productName = name; // Get the product name
-		alert(`Bạn đã chọn sản phẩm: ${productName}`); // Show dialog with product name
-		// Update cart count in AppContext
-		setCartCount((prevCount) => prevCount + 1);
+		const item = {
+			id,
+			name,
+			description,
+			image,
+			price,
+		};
+		addToCart(item);
+		// const productName = name;
+		// alert(`Bạn đã chọn sản phẩm: ${productName}`);
+		// setCartCount((prevCount) => prevCount + 1);
 	};
 
 	useEffect(() => {
@@ -73,12 +80,12 @@ const Items = ({ id, name, description, image, price, s_image, hideCart }) => {
 					>
 						<p className='lead'>{price}</p>
 						{!hideCart && (
-							<div className='shopping-cart btn btn-primary'>
-								<FontAwesomeIcon
-									icon={faCartPlus}
-									onClick={addProductHandler}
-								/>
-							</div>
+							<button
+								className='shopping-cart btn btn-primary'
+								onClick={addProductHandler}
+							>
+								<FontAwesomeIcon icon={faCartPlus} />
+							</button>
 						)}
 					</div>
 				</div>

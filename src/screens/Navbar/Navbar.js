@@ -3,7 +3,6 @@ import { applyTheme, teams } from '../../colors/theme';
 import { AppContext } from '../../AppContext';
 import './Navbar.css';
 import { FaShoppingCart } from 'react-icons/fa';
-import Cart from '../../components/CartItems/Cart';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -114,16 +113,17 @@ const Navbar = () => {
 						</div>
 						<div className='app__navbar-icons'>
 							<div className='app__top-bottom-center app__nav-open-button app__nav-open-button1 dropdown-parent'>
-								<FaShoppingCart
-									className='shopping-cart'
-									size={35}
-									color={teams[club]?.color_title}
-								/>
+								<Link to='/cart'>
+									<FaShoppingCart
+										className='shopping-cart'
+										size={35}
+										color={teams[club]?.color_title}
+									/>
+								</Link>
 								{cartCount > 0 && (
 									<div className='app__nav-count'>{cartCount}</div>
 								)}{' '}
 								{/* Display cart count */}
-								<Cart />
 							</div>
 						</div>
 					</div>
