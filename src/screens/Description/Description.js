@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link, useParams, useNavigate, useLocation } from 'react-router-dom';
 import './Description.css';
 import '../../Utilities.css';
+import DescriptionOption from './Options/DescriptionOption';
 
 const Description = () => {
 	const { id } = useParams();
@@ -37,8 +38,8 @@ const Description = () => {
 	};
 
 	return (
-		<div className='container'>
-			<div className='flex items-start flex-gap-5'>
+		<div className='container description'>
+			<div className='grid grid-2-col '>
 				<div className='img-holder'>
 					<img
 						src={renderedProduct.image1}
@@ -46,16 +47,16 @@ const Description = () => {
 						className='desc-img'
 					/>
 				</div>
-				<div>
-					<h3 className='fs-md mb-3 word-wrap'>
-						{renderedProduct.name}
-					</h3>
-					<p className='lead mb-3 word-wrap'>
-						{renderedProduct.description}
+				<div className='p-3' style={{ width: '100%' }}>
+					<h3 className='lead mb-1 word-wrap'>{renderedProduct.name}</h3>
+					<p className='fs-sm mb-3 word-wrap'>{renderedProduct.description}</p>
+					<p className='lead mb-3 word-wrap color-primary'>
+						Your Price: {renderedProduct.price}
 					</p>
-					<button onClick={handleBack} className='btn btn-primary'>
-						Back
-					</button>
+					<DescriptionOption />
+					<Link to='/home'>
+						<p className='fs-sm'>Tiếp tục mua sắm</p>
+					</Link>
 				</div>
 			</div>
 		</div>

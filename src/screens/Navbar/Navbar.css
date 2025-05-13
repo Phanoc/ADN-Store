@@ -14,7 +14,7 @@
 }
 
 .search-bar {
-	width: calc(100% - 100px); /* Reduced width to fit btn-home */
+	width: 100%;
 	background-color: white;
 	height: 30px;
 	overflow: hidden;
@@ -22,13 +22,12 @@
 }
 
 .search-input {
-	width: calc(100% - 50px); /* Decrease width by 50px */
 	height: 100%;
 	border-radius: 3px;
 	border: none;
 	padding: 5px;
 	font-size: 16px;
-	margin-left: 30px; /* Shift input 30px to the right */
+	width: 100%;
 }
 
 .app__navbar-logo-img {

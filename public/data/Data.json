@@ -9,16 +9,7 @@
 		"gender": "Men",
 		"description": "Áo đấu sân nhà Chelsea mùa giải 2024 với thiết kế hiện đại và sắc xanh truyền thống."
 	},
-	{
-		"id": 2,
-		"name": "Man United Away 2024",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited1.avif",
-		"image2": "../images/items/ManUnited1_2.avif",
-		"price": "93$",
-		"gender": "Men",
-		"description": "Áo đấu sân khách Man United 2024 với thiết kế tinh tế và phong cách thể thao."
-	},
+	
 	{
 		"id": 3,
 		"name": "Arsenal Third 2024",
@@ -29,16 +20,7 @@
 		"gender": "Men",
 		"description": "Áo đấu thứ ba Arsenal 2024 với thiết kế phá cách và độc đáo."
 	},
-	{
-		"id": 4,
-		"name": "Manchester United x adidas Terrace Icons Jersey Red",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited2.avif",
-		"image2": "../images/items/ManUnited2_2.avif",
-		"price": "99$",
-		"gender": "Men",
-		"description": "Áo Manchester United hợp tác cùng adidas thuộc dòng Terrace Icons, mang phong cách retro đặc trưng."
-	},
+	
 	{
 		"id": 5,
 		"name": "Manchester United x adidas Terrace Icons Jersey Red",
@@ -123,8 +105,8 @@
 		"id": 13,
 		"name": "Chelsea FC Academy Pro",
 		"club": "Chelsea",
-		"image1": "../images/items/Chelsea2.avif",
-		"image2": "../images/items/Chelsea2_2.avif",
+		"image1": "../images/items/Chelsea2.jpg",
+		"image2": "../images/items/Chelsea2_2.jpg",
 		"price": "99$",
 		"gender": "Men",
 		"description": "Áo tập luyện Chelsea Academy Pro với chất liệu thoáng khí và thiết kế thể thao."
@@ -133,7 +115,7 @@
 		"id": 14,
 		"name": "Chelsea FC 2024/25 Match Away",
 		"club": "Chelsea",
-		"image1": "../images/items/Chelsea3.avif",
+		"image1": "../images/items/Chelsea3.jpg",
 		"image2": "../images/items/Chelsea3_2.avif",
 		"price": "99$",
 		"gender": "Men",
@@ -143,8 +125,8 @@
 		"id": 15,
 		"name": "Chelsea FC Academy Pro SE",
 		"club": "Chelsea",
-		"image1": "../images/items/Chelsea4.avif",
-		"image2": "../images/items/Chelse42_2.avif",
+		"image1": "../images/items/Chelsea4.jpg",
+		"image2": "../images/items/Chelsea4_2.avif",
 		"price": "42$",
 		"gender": "Womens",
 		"description": "Phiên bản đặc biệt dòng áo tập Chelsea FC dành cho nữ, thoải mái và nổi bật."
@@ -153,8 +135,8 @@
 		"id": 16,
 		"name": "Chelsea FC Academy Pro",
 		"club": "Chelsea",
-		"image1": "../images/items/Chelsea5.avif",
-		"image2": "../images/items/Chelsea5_2.avif",
+		"image1": "../images/items/Chelsea5.jpg",
+		"image2": "../images/items/Chelsea5_2.jpg",
 		"price": "68$",
 		"gender": "Womens",
 		"description": "Áo tập luyện Chelsea dành cho nữ với thiết kế năng động và thể thao."
@@ -183,8 +165,8 @@
 		"id": 19,
 		"name": "Arsenal adidas Womens 24/25 Authentic Home Shirt",
 		"club": "Arsenal",
-		"image1": "../images/items/Arsenal4.webp",
-		"image2": "../images/items/Arsenal4_2.webp",
+		"image1": "../images/items/Arsenal4.jpg",
+		"image2": "../images/items/Arsenal4_2.jpg",
 		"price": "77$",
 		"gender": "Womens",
 		"description": "Áo sân nhà Arsenal 24/25 phiên bản nữ chính hãng, thoải mái và đẹp mắt."
@@ -193,10 +175,86 @@
 		"id": 20,
 		"name": "Arsenal adidas Womens 24/25 Home Shirt",
 		"club": "Arsenal",
-		"image1": "../images/items/Arsenal5.webp",
-		"image2": "../images/items/Arsenal5_2.webp",
+		"image1": "../images/items/Arsenal5.jpg",
+		"image2": "../images/items/Arsenal5_2.jpg",
 		"price": "48$",
 		"gender": "Womens",
 		"description": "Áo sân nhà 24/25 Arsenal phiên bản nữ, thiết kế đơn giản và sang trọng."
+	},
+	{
+		"id": 21,
+		"name": "Chelsea Strike Shirt 2024 2025 Adults",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea6.avif",
+		"image2": "../images/items/Chelsea6_2.avif",
+		"price": "64$",
+		"gender": "Men",
+		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+	},
+	{
+		"id": 22,
+		"name": "Chelsea Pre Match Shirt Adults",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea7.avif",
+		"image2": "../images/items/Chelsea7_2.avif",
+		"price": "42$",
+		"gender": "Men",
+		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+	},
+	{
+		"id": 23,
+		"name": "Chelsea NSW Tech Fleece Jacket Mens",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea8.avif",
+		"image2": "../images/items/Chelsea8_2.avif",
+		"price": "93$",
+		"gender": "Men",
+		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
 	}
+	,
+	{
+		"id": 24,
+		"name": "Fleece Lined Hooded Jacket",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea9.avif",
+		"image2": "../images/items/Chelsea9_2.avif",
+		"price": "85$",
+		"gender": "Men",
+		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+	}
+	,
+	{
+		"id": 25,
+		"name": "Arsenal adidas Pre Match Shirt Mashup",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal6.webp",
+		"image2": "../images/items/Arsenal6_2.avif",
+		"price": "60$",
+		"gender": "Men",
+		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+	}
+	,
+	{
+		"id": 26,
+		"name": "Arsenal adidas Training Top - Black",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal7.avif",
+		"image2": "../images/items/Arsenal7_2.avif",
+		"price": "65$",
+		"gender": "Men",
+		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+	}
+	,
+	{
+		"id": 27,
+		"name": "Arsenal Tiro 23 Training Top Adults",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal8.avif",
+		"image2": "../images/items/Arsenal8_2.avif",
+		"price": "50$",
+		"gender": "Men",
+		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+	}
+	
+
 ]

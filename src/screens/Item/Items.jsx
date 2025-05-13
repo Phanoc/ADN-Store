@@ -73,7 +73,7 @@ const Items = ({ id, name, description, image, price, s_image, hideCart }) => {
 					>
 						<p className='lead'>{price}</p>
 						{!hideCart && (
-							<div className='shopping-cart'>
+							<div className='shopping-cart btn btn-primary'>
 								<FontAwesomeIcon
 									icon={faCartPlus}
 									onClick={addProductHandler}

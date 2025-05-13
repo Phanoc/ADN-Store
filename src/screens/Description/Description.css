@@ -1,13 +1,23 @@
 .desc-img {
-	height: 400px;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
-.img-holder {
-	display: flex;
-	justify-content: center;
-	border: 2px solid rgba(66, 66, 66, 0.9);
+.description .img-holder {
+	padding: 1rem;
+	width: 100%;
 }
 
-.btn.btn-primary {
-    color: white; /* Set font color to white */
+.description .grid-2-col {
+	grid-template-columns: 2.5fr 1fr;
+	gap: 3rem;
+}
+
+@media (max-width: 780px) {
+	.description .grid-2-col {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
 }

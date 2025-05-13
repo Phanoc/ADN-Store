@@ -1,0 +1,29 @@
+.size-selector .btn {
+	border-radius: 5px;
+	border: 1px solid var(--main_color);
+	color: var(--main_color);
+	text-align: center;
+	font-weight: 600;
+}
+
+.size-selector .btn:hover {
+	background-color: var(--main_color);
+	color: white;
+	animation: sizeHover 0.1s ease-in;
+	transform: none;
+}
+
+.selected {
+	background-color: var(--main_color);
+	color: white !important;
+}
+
+@keyframes sizeHover {
+	0% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: var(--main_color);
+	}
+}
