@@ -1,0 +1,45 @@
+.slideshow-item .text-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slideshow-item .shopping-cart {
+	display: none; /* Remove shopping-cart specifically for Welcome screen */
+}
+
+.slideshow-item .lead {
+	font-size: 0.875rem; /* Match fs-sm font size */
+	font-weight: 400; /* Match fs-sm font weight */
+	text-align: center; /* Center align the text */
+	margin: 0 auto; /* Ensure it is horizontally centered */
+	margin-top: 0px; /* Move the lead text 10px higher */
+	color: white; /* Set text color to white */
+}
+
+.btn-product {
+	/* Remove box and background */
+	background: none;
+	border: none;
+	box-shadow: none;
+	/* Set text styles */
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.2rem; /* Slightly increased font size */
+	/* Align text to match btn-home */
+	margin-left: 0; /* Remove left margin */
+	padding-left: 0; /* Remove left padding */
+	text-align: left;
+}
+
+.flex.dropdown-parent.jself-s:hover .btn-product {
+	background-color: var(--main_color); /* Change to main color on hover */
+	box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+	transform: translateY(-3px); /* Slight lift effect */
+}
+
+.container.flex.flex-gap-3 {
+	/* Match width with the product screen */
+	width: 100%;
+}

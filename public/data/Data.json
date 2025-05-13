@@ -1,0 +1,202 @@
+[
+	{
+		"id": 1,
+		"name": "Chelsea Home 2024",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea1.webp",
+		"image2": "../images/items/Chelsea1_2.webp",
+		"price": "92$",
+		"gender": "Men",
+		"description": "Áo đấu sân nhà Chelsea mùa giải 2024 với thiết kế hiện đại và sắc xanh truyền thống."
+	},
+	{
+		"id": 2,
+		"name": "Man United Away 2024",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited1.avif",
+		"image2": "../images/items/ManUnited1_2.avif",
+		"price": "93$",
+		"gender": "Men",
+		"description": "Áo đấu sân khách Man United 2024 với thiết kế tinh tế và phong cách thể thao."
+	},
+	{
+		"id": 3,
+		"name": "Arsenal Third 2024",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal1.avif",
+		"image2": "../images/items/Arsenal1_2.avif",
+		"price": "87$",
+		"gender": "Men",
+		"description": "Áo đấu thứ ba Arsenal 2024 với thiết kế phá cách và độc đáo."
+	},
+	{
+		"id": 4,
+		"name": "Manchester United x adidas Terrace Icons Jersey Red",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited2.avif",
+		"image2": "../images/items/ManUnited2_2.avif",
+		"price": "99$",
+		"gender": "Men",
+		"description": "Áo Manchester United hợp tác cùng adidas thuộc dòng Terrace Icons, mang phong cách retro đặc trưng."
+	},
+	{
+		"id": 5,
+		"name": "Manchester United x adidas Terrace Icons Jersey Red",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited2.avif",
+		"image2": "../images/items/ManUnited2_2.avif",
+		"price": "99$",
+		"gender": "Men",
+		"description": "Thiết kế cổ điển kết hợp cùng sắc đỏ đặc trưng của Quỷ Đỏ, sản phẩm từ bộ sưu tập Terrace Icons."
+	},
+	{
+		"id": 6,
+		"name": "Manchester United Originals Track Top",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited3.avif",
+		"image2": "../images/items/ManUnited3_2.avif",
+		"price": "120$",
+		"gender": "Men",
+		"description": "Áo khoác thể thao Originals với phong cách cổ điển, biểu tượng Manchester United nổi bật."
+	},
+	{
+		"id": 7,
+		"name": "Manchester United 1992-94 Retro Home Shirt Red",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited4.avif",
+		"image2": "../images/items/ManUnited4_2.avif",
+		"price": "99$",
+		"gender": "Men",
+		"description": "Phiên bản áo đấu sân nhà giai đoạn 1992-94, tái hiện thời kỳ hoàng kim của MU."
+	},
+	{
+		"id": 8,
+		"name": "Manchester United x adidas Urban Purist T-Shirt Blue",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited5.jpg",
+		"image2": "../images/items/ManUnited5_2.jpg",
+		"price": "56$",
+		"gender": "Men",
+		"description": "Áo thun phong cách đô thị, thiết kế hiện đại dành cho fan MU năng động."
+	},
+	{
+		"id": 9,
+		"name": "Manchester United x adidas Urban Purist T-Shirt Blue",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited6.avif",
+		"image2": "../images/items/ManUnited6_2.webp",
+		"price": "56$",
+		"gender": "Womens",
+		"description": "Áo thun nữ thiết kế Urban Purist, năng động và thời trang cho fan nữ MU."
+	},
+	{
+		"id": 10,
+		"name": "Manchester United 24/25 Home Authentic Jersey",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited7.avif",
+		"image2": "../images/items/ManUnited7_2.webp",
+		"price": "59$",
+		"gender": "Men",
+		"description": "Phiên bản áo đấu chính thức sân nhà mùa 2024/25 của Man United dành cho nam."
+	},
+	{
+		"id": 11,
+		"name": "Manchester United 24/25 Home Jersey Womens",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited8.webp",
+		"image2": "../images/items/ManUnited8_2.webp",
+		"price": "42$",
+		"gender": "Womens",
+		"description": "Áo đấu sân nhà 24/25 phiên bản dành cho nữ, với thiết kế vừa vặn và phong cách."
+	},
+	{
+		"id": 12,
+		"name": "Manchester United 24/25 Away Jersey Womens",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited9.avif",
+		"image2": "../images/items/ManUnited9_2.avif",
+		"price": "46$",
+		"gender": "Womens",
+		"description": "Áo sân khách mùa giải 24/25 cho nữ, thiết kế hiện đại và năng động."
+	},
+	{
+		"id": 13,
+		"name": "Chelsea FC Academy Pro",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea2.avif",
+		"image2": "../images/items/Chelsea2_2.avif",
+		"price": "99$",
+		"gender": "Men",
+		"description": "Áo tập luyện Chelsea Academy Pro với chất liệu thoáng khí và thiết kế thể thao."
+	},
+	{
+		"id": 14,
+		"name": "Chelsea FC 2024/25 Match Away",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea3.avif",
+		"image2": "../images/items/Chelsea3_2.avif",
+		"price": "99$",
+		"gender": "Men",
+		"description": "Áo đấu sân khách mùa 2024/25 của Chelsea, màu sắc trẻ trung và năng động."
+	},
+	{
+		"id": 15,
+		"name": "Chelsea FC Academy Pro SE",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea4.avif",
+		"image2": "../images/items/Chelse42_2.avif",
+		"price": "42$",
+		"gender": "Womens",
+		"description": "Phiên bản đặc biệt dòng áo tập Chelsea FC dành cho nữ, thoải mái và nổi bật."
+	},
+	{
+		"id": 16,
+		"name": "Chelsea FC Academy Pro",
+		"club": "Chelsea",
+		"image1": "../images/items/Chelsea5.avif",
+		"image2": "../images/items/Chelsea5_2.avif",
+		"price": "68$",
+		"gender": "Womens",
+		"description": "Áo tập luyện Chelsea dành cho nữ với thiết kế năng động và thể thao."
+	},
+	{
+		"id": 17,
+		"name": "Arsenal 24/25 Away Jersey",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal2.avif",
+		"image2": "../images/items/Arsenal2_2.avif",
+		"price": "83$",
+		"gender": "Men",
+		"description": "Áo sân khách mùa 2024/25 của Arsenal với thiết kế trẻ trung, phong cách hiện đại."
+	},
+	{
+		"id": 18,
+		"name": "Arsenal 24/25 Home Jersey",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal3.avif",
+		"image2": "../images/items/Arsenal3_2.avif",
+		"price": "83$",
+		"gender": "Men",
+		"description": "Áo sân nhà chính thức mùa giải 24/25 của Arsenal, đậm chất truyền thống."
+	},
+	{
+		"id": 19,
+		"name": "Arsenal adidas Womens 24/25 Authentic Home Shirt",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal4.webp",
+		"image2": "../images/items/Arsenal4_2.webp",
+		"price": "77$",
+		"gender": "Womens",
+		"description": "Áo sân nhà Arsenal 24/25 phiên bản nữ chính hãng, thoải mái và đẹp mắt."
+	},
+	{
+		"id": 20,
+		"name": "Arsenal adidas Womens 24/25 Home Shirt",
+		"club": "Arsenal",
+		"image1": "../images/items/Arsenal5.webp",
+		"image2": "../images/items/Arsenal5_2.webp",
+		"price": "48$",
+		"gender": "Womens",
+		"description": "Áo sân nhà 24/25 Arsenal phiên bản nữ, thiết kế đơn giản và sang trọng."
+	}
+]

@@ -1,0 +1,137 @@
+.slideshow-wrapper {
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	align-items: center; /* Center align children horizontally */
+	position: relative;
+	height: 550px; /* Further increase height to fully display content */
+}
+
+.slideshow-container {
+	position: relative;
+	width: 100%;
+	height: 550px; /* Increase height to provide more space for the content */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.slideshow-track {
+	display: flex;
+	animation: slide 10s linear infinite; /* Continuous sliding effect */
+}
+
+.slideshow-frame {
+	display: flex;
+	justify-content: space-between; /* Ensure even spacing */
+	width: 90%; /* Adjust width to center images and remove excess space */
+	margin: 0 auto; /* Center the frame */
+	position: relative;
+}
+
+.slideshow-item {
+	flex: 0 0 calc(100% / 3 - 20px); /* Show 3 items at a time with spacing */
+	margin: 0 10px; /* Add spacing between items */
+	opacity: 1;
+	transform: scale(1);
+	transition: transform 1s ease-in-out;
+	height: 400px; /* Recover original height */
+	width: 80%; /* Center the image */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slideshow-item img {
+	width: 100%;
+	height: 100%; /* Ensure consistent size */
+	object-fit: cover; /* Maintain aspect ratio */
+}
+
+.slideshow-item .item-details {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.slideshow-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: blue; /* Keep icon color as blue */
+	border: none;
+	cursor: pointer;
+	z-index: 10;
+	font-size: 24px; /* Adjust size for FontAwesome icons */
+	padding: 0; /* Remove padding to eliminate circular background */
+	background-color: transparent; /* Ensure no background color */
+	box-shadow: none; /* Remove shadow */
+}
+
+.slideshow-btn.prev {
+	left: 10px;
+}
+
+.slideshow-btn.next {
+	right: 10px;
+}
+
+.slideshow-indicators {
+	margin-top: 10px; /* Add spacing between container and indicators */
+	display: flex;
+	justify-content: center;
+	gap: 7px; /* Match Zalo's spacing */
+	z-index: 5; /* Ensure indicators are above other elements */
+}
+
+.indicator {
+	background: gray; /* Default color for inactive indicators */
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	margin-right: 7px;
+	margin-left: 7px;
+	border-radius: 100%; /* Make the indicators circular */
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	border: 1px solid white; /* Add border for better visibility */
+}
+
+.indicator.active {
+	background-color: blue; /* Highlight active indicator with blue color */
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%); /* Slide all items to the left */
+	}
+}
+
+/* Welcome screen specific styles */
+.slideshow-item {
+	width: 300px; /* Match the width of item-card */
+	height: 400px; /* Recover original height */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden; /* Ensure content does not overflow */
+}
+
+.slideshow-item img {
+	height: calc(
+		100% - 70px
+	); /* Increase height to ensure the full image is displayed */
+	object-fit: cover;
+	width: 100%;
+	margin-bottom: 0; /* Ensure no gap between img and card-body */
+}
+
+.slideshow-item .card-body {
+	width: 100%; /* Fit the width of the image */
+	height: 80px; /* Ensure consistent height for all images */
+	overflow: hidden;
+	text-align: center; /* Center align the lead */
+}

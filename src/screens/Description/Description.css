@@ -1,0 +1,13 @@
+.desc-img {
+	height: 400px;
+}
+
+.img-holder {
+	display: flex;
+	justify-content: center;
+	border: 2px solid rgba(66, 66, 66, 0.9);
+}
+
+.btn.btn-primary {
+    color: white; /* Set font color to white */
+}
