@@ -8,28 +8,13 @@ import { Link, useLocation } from 'react-router-dom';
 import React, { useContext, useEffect, useState } from 'react';
 
 const Items = ({ id, name, description, image, price, s_image, hideCart }) => {
-	const { club, setCartCount, addToCart } = useContext(AppContext);
+	const { club, setCartCount } = useContext(AppContext);
 	const location = useLocation();
 	const fromWelcome = location.pathname === '/' ? true : false;
 
 	useEffect(() => {
 		applyTheme(club);
 	}, [club]);
-
-	const addProductHandler = (event) => {
-		event.preventDefault();
-		const item = {
-			id,
-			name,
-			description,
-			image,
-			price,
-		};
-		addToCart(item);
-		// const productName = name;
-		// alert(`Bạn đã chọn sản phẩm: ${productName}`);
-		// setCartCount((prevCount) => prevCount + 1);
-	};
 
 	useEffect(() => {
 		if (teams[club]) {
@@ -65,29 +50,8 @@ const Items = ({ id, name, description, image, price, s_image, hideCart }) => {
 				<img src={image} alt='' className='card-img img1' />
 				<img src={s_image} alt='' className='card-img img2' />
 				<div className='card-body'>
+					<p className='lead mb-1 '>${price}.00</p>
 					<h3 className='fs-sm'>{name}</h3>
-					<div>
-						<p>{description}</p>
-					</div>
-					<div
-						className='text-center'
-						style={{
-							marginTop: '10px',
-							display: 'flex',
-							justifyContent: 'space-between',
-							alignItems: 'center',
-						}}
-					>
-						<p className='lead'>{price}</p>
-						{!hideCart && (
-							<button
-								className='shopping-cart btn btn-primary'
-								onClick={addProductHandler}
-							>
-								<FontAwesomeIcon icon={faCartPlus} />
-							</button>
-						)}
-					</div>
 				</div>
 			</div>
 		</Link>

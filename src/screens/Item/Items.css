@@ -59,3 +59,15 @@
 	margin: 10px;
 	box-sizing: border-box;
 } */
+
+.card {
+	position: relative;
+	cursor: pointer;
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+	/* box-shadow: 0 2px 5px var(--main_color); */
+}
+
+.card:hover {
+	box-shadow: 0 12px 24px var(--main_color);
+	transform: translateY(-5px);
+}

@@ -73,6 +73,7 @@ const Home = () => {
 									image={e.image1}
 									s_image={e.image2}
 									price={e.price}
+									description={e.description}
 								/>
 							</div>
 						))

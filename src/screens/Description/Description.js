@@ -8,8 +8,6 @@ import DescriptionOption from './Options/DescriptionOption';
 const Description = () => {
 	const { id } = useParams();
 	const [renderedProduct, setRenderedProduct] = useState(null);
-	const navigate = useNavigate();
-	const location = useLocation();
 
 	useEffect(() => {
 		axios
@@ -27,16 +25,6 @@ const Description = () => {
 		return <p>Something went wrong</p>;
 	}
 
-	const fromWelcome = location.state?.fromWelcome ?? false; // Default to false if undefined
-
-	const handleBack = () => {
-		if (fromWelcome) {
-			navigate('/'); // Navigate to Welcome screen
-		} else {
-			navigate('/home'); // Navigate to Product screen
-		}
-	};
-
 	return (
 		<div className='container description'>
 			<div className='grid grid-2-col '>
@@ -53,9 +41,15 @@ const Description = () => {
 					<p className='lead mb-3 word-wrap color-primary'>
 						Your Price: {renderedProduct.price}
 					</p>
-					<DescriptionOption />
+					<DescriptionOption
+						key={renderedProduct.id}
+						name={renderedProduct.name}
+						description={renderedProduct.description}
+						image={renderedProduct.image1}
+						price={renderedProduct.price}
+					/>
 					<Link to='/home'>
-						<p className='fs-sm'>Tiếp tục mua sắm</p>
+						<p className='fs-sm linked-text'>Tiếp tục mua sắm</p>
 					</Link>
 				</div>
 			</div>

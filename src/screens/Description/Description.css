@@ -15,6 +15,10 @@
 	gap: 3rem;
 }
 
+.linked-text:hover {
+	text-decoration: underline;
+}
+
 @media (max-width: 780px) {
 	.description .grid-2-col {
 		grid-template-columns: 1fr;

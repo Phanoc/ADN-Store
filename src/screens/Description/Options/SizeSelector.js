@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import './SizeSelector.css';
 
-const SizeSelector = () => {
+const SizeSelector = (props) => {
 	const [selectedSize, setSelectedSize] = useState(null);
 	const sizes = ['S', 'M', 'XL', '2XL', '3XL'];
+
+	const selectHandler = (size) => {
+		setSelectedSize(size);
+		props.onSelectedSize(size);
+	};
 
 	return (
 		<div className='mb-3'>
@@ -13,7 +18,7 @@ const SizeSelector = () => {
 					return (
 						<button
 							key={size}
-							onClick={() => setSelectedSize(size)}
+							onClick={() => selectHandler(size)}
 							className={`btn ${selectedSize === size ? 'selected' : ''}`}
 						>
 							{size}

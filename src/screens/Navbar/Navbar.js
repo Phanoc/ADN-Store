@@ -8,19 +8,25 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 const Navbar = () => {
 	const location = useLocation();
 	const navigate = useNavigate();
-	const { club, setClub, setGlobalSearchTerm, cartCount } =
-		useContext(AppContext); // Thêm setGlobalSearchTerm
+	const { club, setClub, setGlobalSearchTerm, cartCount, gender, setGender } =
+		useContext(AppContext);
 	const [searchTerm, setSearchTerm] = useState('');
 	const [count, setCount] = useState(1);
+	const [menuState, setMenuState] = useState(false);
 
 	useEffect(() => {
 		applyTheme(club);
+		setGender('All');
 	}, [club]);
 
 	const handleSearch = (e) => {
 		const term = e.target.value;
 		setSearchTerm(term);
 		setGlobalSearchTerm(term); // Cập nhật giá trị tìm kiếm toàn cục
+	};
+
+	const handleClickMenu = () => {
+		setMenuState(!menuState);
 	};
 
 	useEffect(() => {
@@ -125,10 +131,24 @@ const Navbar = () => {
 								)}{' '}
 								{/* Display cart count */}
 							</div>
+							<button
+								className='app__top-bottom-center app__nav-open-button app__nav-open-button2'
+								onClick={handleClickMenu}
+							>
+								<span className='line line-1'></span>
+								<span className='line line-2'></span>
+								<span className='line line-3'></span>
+							</button>
 						</div>
 					</div>
 				)}
 			</div>
+			{menuState && (
+				<div className='app__navbar-menu2'>
+					<div>Trang chủ</div>
+					<div>Giỏ hàng</div>
+				</div>
+			)}
 		</nav>
 	);
 };

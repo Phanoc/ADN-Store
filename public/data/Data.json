@@ -5,29 +5,27 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea1.webp",
 		"image2": "../images/items/Chelsea1_2.webp",
-		"price": "92$",
+		"price": 92,
 		"gender": "Men",
 		"description": "Áo đấu sân nhà Chelsea mùa giải 2024 với thiết kế hiện đại và sắc xanh truyền thống."
 	},
-	
 	{
 		"id": 3,
 		"name": "Arsenal Third 2024",
 		"club": "Arsenal",
 		"image1": "../images/items/Arsenal1.avif",
 		"image2": "../images/items/Arsenal1_2.avif",
-		"price": "87$",
+		"price": 87,
 		"gender": "Men",
 		"description": "Áo đấu thứ ba Arsenal 2024 với thiết kế phá cách và độc đáo."
 	},
-	
 	{
 		"id": 5,
 		"name": "Manchester United x adidas Terrace Icons Jersey Red",
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited2.avif",
 		"image2": "../images/items/ManUnited2_2.avif",
-		"price": "99$",
+		"price": 99,
 		"gender": "Men",
 		"description": "Thiết kế cổ điển kết hợp cùng sắc đỏ đặc trưng của Quỷ Đỏ, sản phẩm từ bộ sưu tập Terrace Icons."
 	},
@@ -37,7 +35,7 @@
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited3.avif",
 		"image2": "../images/items/ManUnited3_2.avif",
-		"price": "120$",
+		"price": 120,
 		"gender": "Men",
 		"description": "Áo khoác thể thao Originals với phong cách cổ điển, biểu tượng Manchester United nổi bật."
 	},
@@ -47,7 +45,7 @@
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited4.avif",
 		"image2": "../images/items/ManUnited4_2.avif",
-		"price": "99$",
+		"price": 99,
 		"gender": "Men",
 		"description": "Phiên bản áo đấu sân nhà giai đoạn 1992-94, tái hiện thời kỳ hoàng kim của MU."
 	},
@@ -57,7 +55,7 @@
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited5.jpg",
 		"image2": "../images/items/ManUnited5_2.jpg",
-		"price": "56$",
+		"price": 56,
 		"gender": "Men",
 		"description": "Áo thun phong cách đô thị, thiết kế hiện đại dành cho fan MU năng động."
 	},
@@ -67,7 +65,7 @@
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited6.avif",
 		"image2": "../images/items/ManUnited6_2.webp",
-		"price": "56$",
+		"price": 56,
 		"gender": "Womens",
 		"description": "Áo thun nữ thiết kế Urban Purist, năng động và thời trang cho fan nữ MU."
 	},
@@ -77,7 +75,7 @@
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited7.avif",
 		"image2": "../images/items/ManUnited7_2.webp",
-		"price": "59$",
+		"price": 59,
 		"gender": "Men",
 		"description": "Phiên bản áo đấu chính thức sân nhà mùa 2024/25 của Man United dành cho nam."
 	},
@@ -87,7 +85,7 @@
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited8.webp",
 		"image2": "../images/items/ManUnited8_2.webp",
-		"price": "42$",
+		"price": 42,
 		"gender": "Womens",
 		"description": "Áo đấu sân nhà 24/25 phiên bản dành cho nữ, với thiết kế vừa vặn và phong cách."
 	},
@@ -97,7 +95,7 @@
 		"club": "ManUnited",
 		"image1": "../images/items/ManUnited9.avif",
 		"image2": "../images/items/ManUnited9_2.avif",
-		"price": "46$",
+		"price": 46,
 		"gender": "Womens",
 		"description": "Áo sân khách mùa giải 24/25 cho nữ, thiết kế hiện đại và năng động."
 	},
@@ -107,7 +105,7 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea2.jpg",
 		"image2": "../images/items/Chelsea2_2.jpg",
-		"price": "99$",
+		"price": 99,
 		"gender": "Men",
 		"description": "Áo tập luyện Chelsea Academy Pro với chất liệu thoáng khí và thiết kế thể thao."
 	},
@@ -117,7 +115,7 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea3.jpg",
 		"image2": "../images/items/Chelsea3_2.avif",
-		"price": "99$",
+		"price": 99,
 		"gender": "Men",
 		"description": "Áo đấu sân khách mùa 2024/25 của Chelsea, màu sắc trẻ trung và năng động."
 	},
@@ -127,7 +125,7 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea4.jpg",
 		"image2": "../images/items/Chelsea4_2.avif",
-		"price": "42$",
+		"price": 42,
 		"gender": "Womens",
 		"description": "Phiên bản đặc biệt dòng áo tập Chelsea FC dành cho nữ, thoải mái và nổi bật."
 	},
@@ -137,7 +135,7 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea5.jpg",
 		"image2": "../images/items/Chelsea5_2.jpg",
-		"price": "68$",
+		"price": 68,
 		"gender": "Womens",
 		"description": "Áo tập luyện Chelsea dành cho nữ với thiết kế năng động và thể thao."
 	},
@@ -147,7 +145,7 @@
 		"club": "Arsenal",
 		"image1": "../images/items/Arsenal2.avif",
 		"image2": "../images/items/Arsenal2_2.avif",
-		"price": "83$",
+		"price": 83,
 		"gender": "Men",
 		"description": "Áo sân khách mùa 2024/25 của Arsenal với thiết kế trẻ trung, phong cách hiện đại."
 	},
@@ -157,7 +155,7 @@
 		"club": "Arsenal",
 		"image1": "../images/items/Arsenal3.avif",
 		"image2": "../images/items/Arsenal3_2.avif",
-		"price": "83$",
+		"price": 83,
 		"gender": "Men",
 		"description": "Áo sân nhà chính thức mùa giải 24/25 của Arsenal, đậm chất truyền thống."
 	},
@@ -167,7 +165,7 @@
 		"club": "Arsenal",
 		"image1": "../images/items/Arsenal4.jpg",
 		"image2": "../images/items/Arsenal4_2.jpg",
-		"price": "77$",
+		"price": 77,
 		"gender": "Womens",
 		"description": "Áo sân nhà Arsenal 24/25 phiên bản nữ chính hãng, thoải mái và đẹp mắt."
 	},
@@ -177,7 +175,7 @@
 		"club": "Arsenal",
 		"image1": "../images/items/Arsenal5.jpg",
 		"image2": "../images/items/Arsenal5_2.jpg",
-		"price": "48$",
+		"price": 48,
 		"gender": "Womens",
 		"description": "Áo sân nhà 24/25 Arsenal phiên bản nữ, thiết kế đơn giản và sang trọng."
 	},
@@ -187,7 +185,7 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea6.avif",
 		"image2": "../images/items/Chelsea6_2.avif",
-		"price": "64$",
+		"price": 64,
 		"gender": "Men",
 		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
 	},
@@ -197,7 +195,7 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea7.avif",
 		"image2": "../images/items/Chelsea7_2.avif",
-		"price": "42$",
+		"price": 42,
 		"gender": "Men",
 		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
 	},
@@ -207,54 +205,58 @@
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea8.avif",
 		"image2": "../images/items/Chelsea8_2.avif",
-		"price": "93$",
+		"price": 93,
 		"gender": "Men",
 		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	}
-	,
+	},
 	{
 		"id": 24,
 		"name": "Fleece Lined Hooded Jacket",
 		"club": "Chelsea",
 		"image1": "../images/items/Chelsea9.avif",
 		"image2": "../images/items/Chelsea9_2.avif",
-		"price": "85$",
+		"price": 85,
 		"gender": "Men",
 		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	}
-	,
-	{
-		"id": 25,
-		"name": "Arsenal adidas Pre Match Shirt Mashup",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal6.webp",
-		"image2": "../images/items/Arsenal6_2.avif",
-		"price": "60$",
-		"gender": "Men",
-		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	}
-	,
+	},
 	{
 		"id": 26,
 		"name": "Arsenal adidas Training Top - Black",
 		"club": "Arsenal",
 		"image1": "../images/items/Arsenal7.avif",
 		"image2": "../images/items/Arsenal7_2.avif",
-		"price": "65$",
+		"price": 65,
 		"gender": "Men",
 		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	}
-	,
+	},
 	{
 		"id": 27,
 		"name": "Arsenal Tiro 23 Training Top Adults",
 		"club": "Arsenal",
 		"image1": "../images/items/Arsenal8.avif",
 		"image2": "../images/items/Arsenal8_2.avif",
-		"price": "50$",
+		"price": 50,
 		"gender": "Men",
 		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+	},
+	{
+		"id": 28,
+		"name": "Manchester United x adidas Red Polo",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited10.jpg",
+		"image2": "../images/items/ManUnited10_2.webp",
+		"price": 56,
+		"gender": "Men",
+		"description": "We are UNITED FOR RED in supporting the fight against health injustice. 100% of the net proceeds from this purchase will be donated to the Fund for the Global Fund to save lives"
+	},
+	{
+		"id": 29,
+		"name": "Manchester United x adidas Red Jacket",
+		"club": "ManUnited",
+		"image1": "../images/items/ManUnited11.avif",
+		"image2": "../images/items/ManUnited11_2.webp",
+		"price": 68,
+		"gender": "Men",
+		"description": "We are UNITED FOR RED in supporting the fight against health injustice. 100% of the net proceeds from this purchase will be donated to the Fund for the Global Fund to save lives."
 	}
-	
-
 ]

@@ -7,6 +7,7 @@ export const AppProvider = ({ children }) => {
 	const [globalSearchTerm, setGlobalSearchTerm] = useState(''); // Thêm state cho tìm kiếm toàn cục
 	const [cartCount, setCartCount] = useState(0); // Add cartCount state
 	const [cartItems, setCartItems] = useState([]);
+	const [gender, setGender] = useState('All');
 
 	const addToCart = (item) => {
 		setCartItems((prevItems) => [...prevItems, item]);
@@ -24,6 +25,8 @@ export const AppProvider = ({ children }) => {
 				cartItems,
 				setCartItems,
 				addToCart,
+				gender,
+				setGender,
 			}}
 		>
 			{children}
