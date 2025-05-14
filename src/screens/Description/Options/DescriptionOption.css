@@ -1,3 +1,16 @@
 .desc-option {
 	background-color: #f5f6f8;
 }
+
+.deactivate {
+	background-color: #999 !important;
+	cursor: not-allowed;
+}
+
+.deactivate:active {
+	transform: none;
+}
+
+.deactivate:hover {
+	opacity: 1;
+}

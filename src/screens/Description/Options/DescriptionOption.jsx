@@ -29,9 +29,17 @@ const DescriptionOption = ({ id, name, description, image, price }) => {
 			<SizeSelector onSelectedSize={sizeSelectedHandler} />
 			<Link to='/cart'>
 				<button
-					className='btn btn-primary lead'
+					className={`btn btn-primary lead ${!selectedSize && 'deactivate'}`}
 					style={{ width: '100%' }}
-					onClick={addToCartHandler}
+					onClick={(event) => {
+						if (!selectedSize) {
+							event.preventDefault();
+							alert('Please choose your size');
+							return;
+						}
+						addToCartHandler();
+					}}
+					title={!selectedSize && 'Please choose your size'}
 				>
 					Add to cart
 				</button>

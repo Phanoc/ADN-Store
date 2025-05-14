@@ -4,7 +4,7 @@ import CartOrder from './CartOrder';
 import './Cart.css';
 
 const Cart = () => {
-	const [itemsList, setItemsList] = useState();
+	const [itemsList, setItemsList] = useState([]);
 	const passingItemListHandler = (list) => {
 		setItemsList(list);
 		console.log(list);

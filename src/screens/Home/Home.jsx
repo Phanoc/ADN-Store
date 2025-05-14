@@ -6,10 +6,12 @@ import { AppContext } from '../../AppContext';
 import Header from '../Header/Header';
 import FlexWrap from '../../components/UI/FlexWrap';
 import Grid from '../../components/UI/Grid';
+import './Home.css';
 
 const Home = () => {
 	const [data, setData] = useState([]);
-	const { club, globalSearchTerm } = useContext(AppContext); // Sử dụng globalSearchTerm từ AppContext
+	const [filteredData, setFilteredData] = useState([]);
+	const { club, globalSearchTerm, gender, filter } = useContext(AppContext);
 
 	useEffect(() => {
 		applyTheme(club);
@@ -47,42 +49,55 @@ const Home = () => {
 	useEffect(() => {
 		axios
 			.get(process.env.PUBLIC_URL + '/data/Data.json')
-			.then((res) => setData(res.data))
+			.then((res) => setData(res.data.items))
 			.catch((err) => console.error(err));
-	}, []);
+	}, [gender]);
 
-	const filteredData = data.filter(
-		(e) =>
-			(e.name?.toLowerCase() || '').includes(
-				globalSearchTerm?.toLowerCase() || ''
-			) && e.club === club
-	);
+	useEffect(() => {
+		let sortedData = [...data];
+		if (filter === 'L') {
+			sortedData.sort((a, b) => a.price - b.price);
+		} else if (filter === 'H') {
+			sortedData.sort((a, b) => b.price - a.price);
+		}
+		const filtered = sortedData.filter(
+			(e) =>
+				(e.name?.toLowerCase() || '').includes(
+					globalSearchTerm?.toLowerCase() || ''
+				) &&
+				e.club === club &&
+				(gender === 'All' || e.gender === gender)
+		);
+
+		setFilteredData(filtered);
+	}, [data, globalSearchTerm, gender, club, filter]);
 
 	return (
-		<Grid className='grid-2-col'>
-			<Header />
+		<div className='product'>
 			<div className='flex flex-col'>
-				<h2 className='mb-3'>Danh sách áo đấu</h2>
-				<FlexWrap>
-					{filteredData.length > 0 ? (
-						filteredData.map((e) => (
-							<div key={e.id} className='item-card'>
-								<Items
-									id={e.id}
-									name={e.name}
-									image={e.image1}
-									s_image={e.image2}
-									price={e.price}
-									description={e.description}
-								/>
-							</div>
-						))
-					) : (
-						<p>Không tìm thấy sản phẩm</p>
-					)}
-				</FlexWrap>
+				<Header />
+				{/* <h2 className='mb-3 home__jersey text-center'>Danh sách áo đấu</h2> */}
+				<div className='flex flex-col product-list items-center'>
+					<FlexWrap>
+						{filteredData.length > 0 ? (
+							filteredData.map((e) => (
+								<div key={e.id} className='item-card'>
+									<Items
+										id={e.id}
+										name={e.name}
+										image={e.image1}
+										s_image={e.image2}
+										price={e.price}
+									/>
+								</div>
+							))
+						) : (
+							<p>Không tìm thấy sản phẩm</p>
+						)}
+					</FlexWrap>
+				</div>
 			</div>
-		</Grid>
+		</div>
 	);
 };
 

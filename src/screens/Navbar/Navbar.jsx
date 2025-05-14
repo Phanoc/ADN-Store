@@ -4,12 +4,25 @@ import { AppContext } from '../../AppContext';
 import './Navbar.css';
 import { FaShoppingCart } from 'react-icons/fa';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faHouse,
+	faCartShopping,
+	faRightFromBracket,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
 	const location = useLocation();
 	const navigate = useNavigate();
-	const { club, setClub, setGlobalSearchTerm, cartCount, gender, setGender } =
-		useContext(AppContext);
+	const {
+		club,
+		setClub,
+		setGlobalSearchTerm,
+		cartCount,
+		gender,
+		setGender,
+		cartItems,
+	} = useContext(AppContext);
 	const [searchTerm, setSearchTerm] = useState('');
 	const [count, setCount] = useState(1);
 	const [menuState, setMenuState] = useState(false);
@@ -57,14 +70,47 @@ const Navbar = () => {
 			);
 		}
 	}, [club]);
+	const handleClickMenu2_home = () => {
+		navigate('/', { state: { fromWelcome: true } });
+		setMenuState(false);
+	};
+	const handleClickMenu2_cart = () => {
+		navigate('/cart', { state: { fromWelcome: true } });
+		setMenuState(false);
+	};
 
 	return (
-		<nav className='mb-4 app__navbar'>
+		<nav className=' app__navbar'>
+			{menuState && (
+				<div className='app__navbar-menu2'>
+					<div className='container-menu2'>
+						<div className='menu2-home' onClick={handleClickMenu2_home}>
+							<FontAwesomeIcon icon={faHouse} style={{ marginRight: '8px' }} />
+							Trang chủ
+						</div>
+						<div className='menu2-cart' onClick={handleClickMenu2_cart}>
+							<FontAwesomeIcon
+								icon={faCartShopping}
+								style={{ marginRight: '8px' }}
+							/>
+							Giỏ hàng
+						</div>
+						<div onClick={(e) => setMenuState(false)} className='menu2-exit'>
+							<FontAwesomeIcon
+								icon={faRightFromBracket}
+								style={{ marginRight: '8px' }}
+							/>
+							Exit
+						</div>
+					</div>
+				</div>
+			)}
+
 			<div className='container flex flex-gap-3'>
 				<Link to='/'>
 					<div className='flex dropdown-parent' style={{ width: '300px' }}>
 						<img className='logo' src={teams[club]?.logo} alt={club} />
-						<span className='fs-md color-title'>{club}</span>
+						<span className='fs-md color-title club-name'>{club}</span>
 						<div className='dropdown'>
 							<div className='flex flex-col dropdown-item'>
 								{Object.keys(teams)
@@ -78,7 +124,7 @@ const Navbar = () => {
 										>
 											<div className='flex '>
 												<img className='logo' src={teams[e].logo} alt={e} />
-												<span className='fs-md color-title'>{e}</span>
+												<span className='fs-md color-title club-name'>{e}</span>
 											</div>
 										</div>
 									))}
@@ -126,10 +172,9 @@ const Navbar = () => {
 										color={teams[club]?.color_title}
 									/>
 								</Link>
-								{cartCount > 0 && (
-									<div className='app__nav-count'>{cartCount}</div>
+								{cartItems?.length > 0 && (
+									<div className='app__nav-count'>{cartItems?.length}</div>
 								)}{' '}
-								{/* Display cart count */}
 							</div>
 							<button
 								className='app__top-bottom-center app__nav-open-button app__nav-open-button2'
@@ -143,12 +188,6 @@ const Navbar = () => {
 					</div>
 				)}
 			</div>
-			{menuState && (
-				<div className='app__navbar-menu2'>
-					<div>Trang chủ</div>
-					<div>Giỏ hàng</div>
-				</div>
-			)}
 		</nav>
 	);
 };

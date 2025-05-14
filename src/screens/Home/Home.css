@@ -1,0 +1,18 @@
+.home__jersey {
+	color: var(--main_color);
+	width: 100%;
+}
+
+.product .flex {
+	align-items: flex-start;
+	height: 100%;
+}
+
+.product-list {
+	/* padding: 2rem; */
+	padding: 0 30px;
+}
+
+.product-list.flex-col {
+	justify-content: space-evenly;
+}

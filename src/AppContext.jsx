@@ -8,6 +8,7 @@ export const AppProvider = ({ children }) => {
 	const [cartCount, setCartCount] = useState(0);
 	const [cartItems, setCartItems] = useState([]);
 	const [gender, setGender] = useState('All');
+	const [filter, setFilter] = useState("");
 
 	const addToCart = (item) => {
 		setCartItems((prevItems) => [...prevItems, item]);
@@ -39,6 +40,8 @@ export const AppProvider = ({ children }) => {
 				gender,
 				setGender,
 				deleteAddedItem,
+				filter,
+				setFilter
 			}}
 		>
 			{children}

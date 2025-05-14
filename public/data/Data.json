@@ -1,262 +1,320 @@
-[
-	{
-		"id": 1,
-		"name": "Chelsea Home 2024",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea1.webp",
-		"image2": "../images/items/Chelsea1_2.webp",
-		"price": 92,
-		"gender": "Men",
-		"description": "Áo đấu sân nhà Chelsea mùa giải 2024 với thiết kế hiện đại và sắc xanh truyền thống."
-	},
-	{
-		"id": 3,
-		"name": "Arsenal Third 2024",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal1.avif",
-		"image2": "../images/items/Arsenal1_2.avif",
-		"price": 87,
-		"gender": "Men",
-		"description": "Áo đấu thứ ba Arsenal 2024 với thiết kế phá cách và độc đáo."
-	},
-	{
-		"id": 5,
-		"name": "Manchester United x adidas Terrace Icons Jersey Red",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited2.avif",
-		"image2": "../images/items/ManUnited2_2.avif",
-		"price": 99,
-		"gender": "Men",
-		"description": "Thiết kế cổ điển kết hợp cùng sắc đỏ đặc trưng của Quỷ Đỏ, sản phẩm từ bộ sưu tập Terrace Icons."
-	},
-	{
-		"id": 6,
-		"name": "Manchester United Originals Track Top",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited3.avif",
-		"image2": "../images/items/ManUnited3_2.avif",
-		"price": 120,
-		"gender": "Men",
-		"description": "Áo khoác thể thao Originals với phong cách cổ điển, biểu tượng Manchester United nổi bật."
-	},
-	{
-		"id": 7,
-		"name": "Manchester United 1992-94 Retro Home Shirt Red",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited4.avif",
-		"image2": "../images/items/ManUnited4_2.avif",
-		"price": 99,
-		"gender": "Men",
-		"description": "Phiên bản áo đấu sân nhà giai đoạn 1992-94, tái hiện thời kỳ hoàng kim của MU."
-	},
-	{
-		"id": 8,
-		"name": "Manchester United x adidas Urban Purist T-Shirt Blue",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited5.jpg",
-		"image2": "../images/items/ManUnited5_2.jpg",
-		"price": 56,
-		"gender": "Men",
-		"description": "Áo thun phong cách đô thị, thiết kế hiện đại dành cho fan MU năng động."
-	},
-	{
-		"id": 9,
-		"name": "Manchester United x adidas Urban Purist T-Shirt Blue",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited6.avif",
-		"image2": "../images/items/ManUnited6_2.webp",
-		"price": 56,
-		"gender": "Womens",
-		"description": "Áo thun nữ thiết kế Urban Purist, năng động và thời trang cho fan nữ MU."
-	},
-	{
-		"id": 10,
-		"name": "Manchester United 24/25 Home Authentic Jersey",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited7.avif",
-		"image2": "../images/items/ManUnited7_2.webp",
-		"price": 59,
-		"gender": "Men",
-		"description": "Phiên bản áo đấu chính thức sân nhà mùa 2024/25 của Man United dành cho nam."
-	},
-	{
-		"id": 11,
-		"name": "Manchester United 24/25 Home Jersey Womens",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited8.webp",
-		"image2": "../images/items/ManUnited8_2.webp",
-		"price": 42,
-		"gender": "Womens",
-		"description": "Áo đấu sân nhà 24/25 phiên bản dành cho nữ, với thiết kế vừa vặn và phong cách."
-	},
-	{
-		"id": 12,
-		"name": "Manchester United 24/25 Away Jersey Womens",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited9.avif",
-		"image2": "../images/items/ManUnited9_2.avif",
-		"price": 46,
-		"gender": "Womens",
-		"description": "Áo sân khách mùa giải 24/25 cho nữ, thiết kế hiện đại và năng động."
-	},
-	{
-		"id": 13,
-		"name": "Chelsea FC Academy Pro",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea2.jpg",
-		"image2": "../images/items/Chelsea2_2.jpg",
-		"price": 99,
-		"gender": "Men",
-		"description": "Áo tập luyện Chelsea Academy Pro với chất liệu thoáng khí và thiết kế thể thao."
-	},
-	{
-		"id": 14,
-		"name": "Chelsea FC 2024/25 Match Away",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea3.jpg",
-		"image2": "../images/items/Chelsea3_2.avif",
-		"price": 99,
-		"gender": "Men",
-		"description": "Áo đấu sân khách mùa 2024/25 của Chelsea, màu sắc trẻ trung và năng động."
-	},
-	{
-		"id": 15,
-		"name": "Chelsea FC Academy Pro SE",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea4.jpg",
-		"image2": "../images/items/Chelsea4_2.avif",
-		"price": 42,
-		"gender": "Womens",
-		"description": "Phiên bản đặc biệt dòng áo tập Chelsea FC dành cho nữ, thoải mái và nổi bật."
-	},
-	{
-		"id": 16,
-		"name": "Chelsea FC Academy Pro",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea5.jpg",
-		"image2": "../images/items/Chelsea5_2.jpg",
-		"price": 68,
-		"gender": "Womens",
-		"description": "Áo tập luyện Chelsea dành cho nữ với thiết kế năng động và thể thao."
-	},
-	{
-		"id": 17,
-		"name": "Arsenal 24/25 Away Jersey",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal2.avif",
-		"image2": "../images/items/Arsenal2_2.avif",
-		"price": 83,
-		"gender": "Men",
-		"description": "Áo sân khách mùa 2024/25 của Arsenal với thiết kế trẻ trung, phong cách hiện đại."
-	},
-	{
-		"id": 18,
-		"name": "Arsenal 24/25 Home Jersey",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal3.avif",
-		"image2": "../images/items/Arsenal3_2.avif",
-		"price": 83,
-		"gender": "Men",
-		"description": "Áo sân nhà chính thức mùa giải 24/25 của Arsenal, đậm chất truyền thống."
-	},
-	{
-		"id": 19,
-		"name": "Arsenal adidas Womens 24/25 Authentic Home Shirt",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal4.jpg",
-		"image2": "../images/items/Arsenal4_2.jpg",
-		"price": 77,
-		"gender": "Womens",
-		"description": "Áo sân nhà Arsenal 24/25 phiên bản nữ chính hãng, thoải mái và đẹp mắt."
-	},
-	{
-		"id": 20,
-		"name": "Arsenal adidas Womens 24/25 Home Shirt",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal5.jpg",
-		"image2": "../images/items/Arsenal5_2.jpg",
-		"price": 48,
-		"gender": "Womens",
-		"description": "Áo sân nhà 24/25 Arsenal phiên bản nữ, thiết kế đơn giản và sang trọng."
-	},
-	{
-		"id": 21,
-		"name": "Chelsea Strike Shirt 2024 2025 Adults",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea6.avif",
-		"image2": "../images/items/Chelsea6_2.avif",
-		"price": 64,
-		"gender": "Men",
-		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	},
-	{
-		"id": 22,
-		"name": "Chelsea Pre Match Shirt Adults",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea7.avif",
-		"image2": "../images/items/Chelsea7_2.avif",
-		"price": 42,
-		"gender": "Men",
-		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	},
-	{
-		"id": 23,
-		"name": "Chelsea NSW Tech Fleece Jacket Mens",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea8.avif",
-		"image2": "../images/items/Chelsea8_2.avif",
-		"price": 93,
-		"gender": "Men",
-		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	},
-	{
-		"id": 24,
-		"name": "Fleece Lined Hooded Jacket",
-		"club": "Chelsea",
-		"image1": "../images/items/Chelsea9.avif",
-		"image2": "../images/items/Chelsea9_2.avif",
-		"price": 85,
-		"gender": "Men",
-		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	},
-	{
-		"id": 26,
-		"name": "Arsenal adidas Training Top - Black",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal7.avif",
-		"image2": "../images/items/Arsenal7_2.avif",
-		"price": 65,
-		"gender": "Men",
-		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	},
-	{
-		"id": 27,
-		"name": "Arsenal Tiro 23 Training Top Adults",
-		"club": "Arsenal",
-		"image1": "../images/items/Arsenal8.avif",
-		"image2": "../images/items/Arsenal8_2.avif",
-		"price": 50,
-		"gender": "Men",
-		"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
-	},
-	{
-		"id": 28,
-		"name": "Manchester United x adidas Red Polo",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited10.jpg",
-		"image2": "../images/items/ManUnited10_2.webp",
-		"price": 56,
-		"gender": "Men",
-		"description": "We are UNITED FOR RED in supporting the fight against health injustice. 100% of the net proceeds from this purchase will be donated to the Fund for the Global Fund to save lives"
-	},
-	{
-		"id": 29,
-		"name": "Manchester United x adidas Red Jacket",
-		"club": "ManUnited",
-		"image1": "../images/items/ManUnited11.avif",
-		"image2": "../images/items/ManUnited11_2.webp",
-		"price": 68,
-		"gender": "Men",
-		"description": "We are UNITED FOR RED in supporting the fight against health injustice. 100% of the net proceeds from this purchase will be donated to the Fund for the Global Fund to save lives."
-	}
-]
+{
+	"items": [
+		{
+			"id": 1,
+			"name": "Chelsea Home 2024",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea1.webp",
+			"image2": "../images/items/Chelsea1_2.webp",
+			"price": 92,
+			"gender": "Men",
+			"description": "Áo đấu sân nhà Chelsea mùa giải 2024 với thiết kế hiện đại và sắc xanh truyền thống."
+		},
+		{
+			"id": 3,
+			"name": "Arsenal Third 2024",
+			"club": "Arsenal",
+			"image1": "../images/items/Arsenal1.avif",
+			"image2": "../images/items/Arsenal1_2.avif",
+			"price": 87,
+			"gender": "Men",
+			"description": "Áo đấu thứ ba Arsenal 2024 với thiết kế phá cách và độc đáo."
+		},
+		{
+			"id": 5,
+			"name": "Manchester United x adidas Terrace Icons Jersey Red",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited2.avif",
+			"image2": "../images/items/ManUnited2_2.avif",
+			"price": 99,
+			"gender": "Men",
+			"description": "Thiết kế cổ điển kết hợp cùng sắc đỏ đặc trưng của Quỷ Đỏ, sản phẩm từ bộ sưu tập Terrace Icons."
+		},
+		{
+			"id": 6,
+			"name": "Manchester United Originals Track Top",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited3.avif",
+			"image2": "../images/items/ManUnited3_2.avif",
+			"price": 120,
+			"gender": "Men",
+			"description": "Áo khoác thể thao Originals với phong cách cổ điển, biểu tượng Manchester United nổi bật."
+		},
+		{
+			"id": 7,
+			"name": "Manchester United 1992-94 Retro Home Shirt Red",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited4.avif",
+			"image2": "../images/items/ManUnited4_2.avif",
+			"price": 99,
+			"gender": "Men",
+			"description": "Phiên bản áo đấu sân nhà giai đoạn 1992-94, tái hiện thời kỳ hoàng kim của MU."
+		},
+		{
+			"id": 8,
+			"name": "Manchester United x adidas Urban Purist T-Shirt Blue",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited5.jpg",
+			"image2": "../images/items/ManUnited5_2.jpg",
+			"price": 56,
+			"gender": "Men",
+			"description": "Áo thun phong cách đô thị, thiết kế hiện đại dành cho fan MU năng động."
+		},
+		{
+			"id": 9,
+			"name": "Manchester United x adidas Urban Purist T-Shirt Blue",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited6.avif",
+			"image2": "../images/items/ManUnited6_2.webp",
+			"price": 56,
+			"gender": "Womens",
+			"description": "Áo thun nữ thiết kế Urban Purist, năng động và thời trang cho fan nữ MU."
+		},
+		{
+			"id": 10,
+			"name": "Manchester United 24/25 Home Authentic Jersey",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited7.avif",
+			"image2": "../images/items/ManUnited7_2.webp",
+			"price": 59,
+			"gender": "Men",
+			"description": "Phiên bản áo đấu chính thức sân nhà mùa 2024/25 của Man United dành cho nam."
+		},
+		{
+			"id": 11,
+			"name": "Manchester United 24/25 Home Jersey Womens",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited8.webp",
+			"image2": "../images/items/ManUnited8_2.webp",
+			"price": 42,
+			"gender": "Womens",
+			"description": "Áo đấu sân nhà 24/25 phiên bản dành cho nữ, với thiết kế vừa vặn và phong cách."
+		},
+		{
+			"id": 12,
+			"name": "Manchester United 24/25 Away Jersey Womens",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited9.avif",
+			"image2": "../images/items/ManUnited9_2.avif",
+			"price": 46,
+			"gender": "Womens",
+			"description": "Áo sân khách mùa giải 24/25 cho nữ, thiết kế hiện đại và năng động."
+		},
+		{
+			"id": 13,
+			"name": "Chelsea FC Academy Pro",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea2.jpg",
+			"image2": "../images/items/Chelsea2_2.jpg",
+			"price": 99,
+			"gender": "Men",
+			"description": "Áo tập luyện Chelsea Academy Pro với chất liệu thoáng khí và thiết kế thể thao."
+		},
+		{
+			"id": 14,
+			"name": "Chelsea FC 2024/25 Match Away",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea3.jpg",
+			"image2": "../images/items/Chelsea3_2.avif",
+			"price": 99,
+			"gender": "Men",
+			"description": "Áo đấu sân khách mùa 2024/25 của Chelsea, màu sắc trẻ trung và năng động."
+		},
+		{
+			"id": 15,
+			"name": "Chelsea FC Academy Pro SE",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea4.jpg",
+			"image2": "../images/items/Chelsea4_2.avif",
+			"price": 42,
+			"gender": "Womens",
+			"description": "Phiên bản đặc biệt dòng áo tập Chelsea FC dành cho nữ, thoải mái và nổi bật."
+		},
+		{
+			"id": 16,
+			"name": "Chelsea FC Academy Pro",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea5.jpg",
+			"image2": "../images/items/Chelsea5_2.jpg",
+			"price": 68,
+			"gender": "Womens",
+			"description": "Áo tập luyện Chelsea dành cho nữ với thiết kế năng động và thể thao."
+		},
+		{
+			"id": 17,
+			"name": "Arsenal 24/25 Away Jersey",
+			"club": "Arsenal",
+			"image1": "../images/items/Arsenal2.avif",
+			"image2": "../images/items/Arsenal2_2.avif",
+			"price": 83,
+			"gender": "Men",
+			"description": "Áo sân khách mùa 2024/25 của Arsenal với thiết kế trẻ trung, phong cách hiện đại."
+		},
+		{
+			"id": 18,
+			"name": "Arsenal 24/25 Home Jersey",
+			"club": "Arsenal",
+			"image1": "../images/items/Arsenal3.avif",
+			"image2": "../images/items/Arsenal3_2.avif",
+			"price": 83,
+			"gender": "Men",
+			"description": "Áo sân nhà chính thức mùa giải 24/25 của Arsenal, đậm chất truyền thống."
+		},
+		{
+			"id": 19,
+			"name": "Arsenal adidas Womens 24/25 Authentic Home Shirt",
+			"club": "Arsenal",
+			"image1": "../images/items/Arsenal4.jpg",
+			"image2": "../images/items/Arsenal4_2.jpg",
+			"price": 77,
+			"gender": "Womens",
+			"description": "Áo sân nhà Arsenal 24/25 phiên bản nữ chính hãng, thoải mái và đẹp mắt."
+		},
+		{
+			"id": 20,
+			"name": "Arsenal adidas Womens 24/25 Home Shirt",
+			"club": "Arsenal",
+			"image1": "../images/items/Arsenal5.jpg",
+			"image2": "../images/items/Arsenal5_2.jpg",
+			"price": 48,
+			"gender": "Womens",
+			"description": "Áo sân nhà 24/25 Arsenal phiên bản nữ, thiết kế đơn giản và sang trọng."
+		},
+		{
+			"id": 21,
+			"name": "Chelsea Strike Shirt 2024 2025 Adults",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea6.avif",
+			"image2": "../images/items/Chelsea6_2.avif",
+			"price": 64,
+			"gender": "Men",
+			"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+		},
+		{
+			"id": 22,
+			"name": "Chelsea Pre Match Shirt Adults",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea7.avif",
+			"image2": "../images/items/Chelsea7_2.avif",
+			"price": 42,
+			"gender": "Men",
+			"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+		},
+		{
+			"id": 23,
+			"name": "Chelsea NSW Tech Fleece Jacket Mens",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea8.avif",
+			"image2": "../images/items/Chelsea8_2.avif",
+			"price": 93,
+			"gender": "Men",
+			"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+		},
+		{
+			"id": 24,
+			"name": "Fleece Lined Hooded Jacket",
+			"club": "Chelsea",
+			"image1": "../images/items/Chelsea9.avif",
+			"image2": "../images/items/Chelsea9_2.avif",
+			"price": 85,
+			"gender": "Men",
+			"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+		},
+		{
+			"id": 26,
+			"name": "Arsenal adidas Training Top - Black",
+			"club": "Arsenal",
+			"image1": "../images/items/Arsenal7.avif",
+			"image2": "../images/items/Arsenal7_2.avif",
+			"price": 65,
+			"gender": "Men",
+			"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+		},
+		{
+			"id": 27,
+			"name": "Arsenal Tiro 23 Training Top Adults",
+			"club": "Arsenal",
+			"image1": "../images/items/Arsenal8.avif",
+			"image2": "../images/items/Arsenal8_2.avif",
+			"price": 50,
+			"gender": "Men",
+			"description": "Gear up for match day with the Nike Chelsea Strike Shirt 2024 2025"
+		},
+		{
+			"id": 28,
+			"name": "Manchester United x adidas Red Polo",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited10.jpg",
+			"image2": "../images/items/ManUnited10_2.webp",
+			"price": 56,
+			"gender": "Men",
+			"description": "We are UNITED FOR RED in supporting the fight against health injustice. 100% of the net proceeds from this purchase will be donated to the Fund for the Global Fund to save lives"
+		},
+		{
+			"id": 29,
+			"name": "Manchester United x adidas Red Jacket",
+			"club": "ManUnited",
+			"image1": "../images/items/ManUnited11.avif",
+			"image2": "../images/items/ManUnited11_2.webp",
+			"price": 68,
+			"gender": "Men",
+			"description": "We are UNITED FOR RED in supporting the fight against health injustice. 100% of the net proceeds from this purchase will be donated to the Fund for the Global Fund to save lives."
+		}
+	],
+	"legends": [
+		{
+			"name": "Eric Cantona",
+			"club": "ManUnited",
+			"image": "../images/Legends_pic/ecantona.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Eric_Cantona"
+		},
+		{
+			"name": "Ruud Van Nistelrooy",
+			"club": "ManUnited",
+			"image": "../images/Legends_pic/ruudvn.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Ruud_Van_Nistelrooy"
+		},
+		{
+			"name": "David Beckham",
+			"club": "ManUnited",
+			"image": "../images/Legends_pic/dbeckham.jpg",
+			"link": "https://vi.wikipedia.org/wiki/David_Beckham"
+		},
+		{
+			"name": "Michael Ballack",
+			"club": "Chelsea",
+			"image": "../images/Legends_pic/ballackm.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Michael_Ballack"
+		},
+		{
+			"name": "Didier Drogba",
+			"club": "Chelsea",
+			"image": "../images/Legends_pic/ddrogba.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Didier_Drogba"
+		},
+		{
+			"name": "Eden Hazard",
+			"club": "Chelsea",
+			"image": "../images/Legends_pic/hazarde.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Eden_Hazard"
+		},
+		{
+			"name": "Santi Cazorla",
+			"club": "Arsenal",
+			"image": "../images/Legends_pic/scarzorla.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Santi_Cazorla"
+		},
+		{
+			"name": "Thierry Henry",
+			"club": "Arsenal",
+			"image": "../images/Legends_pic/thenry.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Thierry_Henry"
+		},
+		{
+			"name": "Patrick Vieira",
+			"club": "Arsenal",
+			"image": "../images/Legends_pic/patrickv.jpg",
+			"link": "https://vi.wikipedia.org/wiki/Patrick_Vieira"
+		}
+	]
+}

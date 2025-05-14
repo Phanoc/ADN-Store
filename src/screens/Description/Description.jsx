@@ -13,7 +13,7 @@ const Description = () => {
 		axios
 			.get('/data/Data.json')
 			.then((event) => {
-				const product = event.data.find((item) => item.id == id);
+				const product = event.data.items.find((item) => item.id == id);
 				setRenderedProduct(product);
 			})
 			.catch((error) => {
@@ -39,7 +39,7 @@ const Description = () => {
 					<h3 className='lead mb-1 word-wrap'>{renderedProduct.name}</h3>
 					<p className='fs-sm mb-3 word-wrap'>{renderedProduct.description}</p>
 					<p className='lead mb-3 word-wrap color-primary'>
-						Your Price: {renderedProduct.price}
+						Your Price: ${renderedProduct.price}.00
 					</p>
 					<DescriptionOption
 						key={renderedProduct.id}
@@ -49,8 +49,8 @@ const Description = () => {
 						image={renderedProduct.image1}
 						price={renderedProduct.price}
 					/>
-					<Link to='/home'>
-						<p className='fs-sm linked-text color-primary'>CONTINUE SHOPPING</p>
+					<Link to='/home' className='flex justify-center'>
+						<p className='linked-text'>CONTINUE SHOPPING</p>
 					</Link>
 				</div>
 			</div>

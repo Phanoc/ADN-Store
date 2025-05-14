@@ -3,13 +3,13 @@
 	flex-direction: column; /* Stack children vertically */
 	align-items: center; /* Center align children horizontally */
 	position: relative;
-	height: 550px; /* Further increase height to fully display content */
+	height: 550px;
 }
 
 .slideshow-container {
 	position: relative;
 	width: 100%;
-	height: 550px; /* Increase height to provide more space for the content */
+	height: 450px; /* Increase height to provide more space for the content */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,13 +18,13 @@
 
 .slideshow-track {
 	display: flex;
-	animation: slide 10s linear infinite; /* Continuous sliding effect */
+	animation: slide 10s linear infinite;
 }
 
 .slideshow-frame {
 	display: flex;
 	justify-content: space-between; /* Ensure even spacing */
-	width: 90%; /* Adjust width to center images and remove excess space */
+	width: 90%;
 	margin: 0 auto; /* Center the frame */
 	position: relative;
 }
@@ -57,7 +57,7 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	color: blue; /* Keep icon color as blue */
+	color: var(--main_color); /* Keep icon color as blue */
 	border: none;
 	cursor: pointer;
 	z-index: 10;
@@ -97,16 +97,9 @@
 }
 
 .indicator.active {
-	background-color: blue; /* Highlight active indicator with blue color */
-}
-
-@keyframes slide {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%); /* Slide all items to the left */
-	}
+	background-color: var(
+		--main_color
+	); /* Highlight active indicator with blue color */
 }
 
 /* Welcome screen specific styles */
@@ -134,4 +127,96 @@
 	height: 80px; /* Ensure consistent height for all images */
 	overflow: hidden;
 	text-align: center; /* Center align the lead */
+}
+
+.mb-3 {
+	/* padding-left: 10px; */
+	/* margin-top: 100px;
+	color: var(--main_color); */
+}
+
+.welcome-title {
+	padding-left: 10px;
+	color: var(--main_color);
+}
+
+.invite-title {
+	padding-left: 10px;
+	color: var(--main_color);
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+
+.button-product {
+	margin-left: 10px;
+	background-color: var(--main_color);
+	color: white;
+	font-weight: bold;
+	border: none;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 15px;
+}
+.button-product:hover {
+	transform: scale(1.1); /* Phóng to nhẹ khi hover */
+	transition: transform 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng mượt */
+	box-shadow: inset 0 0 0 2px var(--main_color), 0 0 10px var(--main_color); /* Thêm hiệu ứng bóng */
+}
+
+.slideshow-upper-item {
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.slideshow-upper-item img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.slideshow-upper-item h3 {
+	font-size: 1.5rem;
+	margin: 0.5rem 0;
+}
+
+.legends-name {
+	color: var(--main_color);
+}
+
+.legend-image {
+	margin-bottom: 30px;
+	width: 100%; /* Ensure the image fits the width of the screen */
+	height: 150px; /* Set a fixed height for consistent size */
+	display: block;
+	object-fit: cover; /* Maintain aspect ratio while filling the area */
+	background-color: #f0f0f0; /* Add a background color to avoid gaps */
+}
+
+.legends-name {
+	text-align: center;
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	color: var(--main_color);
+}
+
+.slideshow-upper-btn {
+	position: absolute;
+	top: 50%; /* Center vertically */
+	transform: translateY(-50%); /* Adjust for centering */
+	z-index: 10; /* Ensure it appears above the image */
+	font-size: 30px; /* Adjust size for FontAwesome icons */
+	color: white; /* Match theme color */
+	background-color: transparent; /* No background */
+	border: none; /* Remove border */
+	cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.slideshow-upper-btn.prev {
+	left: 10px; /* Position on the left side of the image */
+	top: 75%; /* Move the button to the middle of the legend-image */
+}
+
+.slideshow-upper-btn.next {
+	right: 10px; /* Position on the right side of the image */
+	top: 75%; /* Move the button to the middle of the legend-image */
 }
