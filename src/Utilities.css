@@ -89,6 +89,7 @@ p {
 
 /* Button */
 .btn {
+	display: block;
 	padding: 8px 15px;
 	border-radius: 1000px;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
@@ -102,7 +103,7 @@ p {
 }
 
 .btn:hover {
-	transform: translateY(-1px);
+	opacity: 0.9;
 }
 
 .btn:active {
@@ -124,9 +125,23 @@ p {
 	text-decoration: underline;
 }
 
+.linked-text {
+	font-size: 14px;
+	color: #3863a3;
+}
+
+.linked-text:hover {
+	text-decoration: underline;
+}
+
 .word-wrap {
 	white-space: normal;
-	/* word-wrap: break-word; */
+}
+
+.text-ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .color-title {
@@ -158,6 +173,14 @@ p {
 	font-size: 4rem;
 }
 
+.fw-bold {
+	font-weight: bold;
+}
+
+.fw-bolder {
+	font-weight: bolder;
+}
+
 /* Layout */
 .flex {
 	display: flex;
@@ -174,12 +197,8 @@ p {
 	justify-content: space-between;
 }
 
-.flex-gap-1 {
-	gap: 1rem;
-}
-
-.flex-gap-2 {
-	gap: 1.5rem;
+.justify-end {
+	justify-content: flex-end;
 }
 
 .items-start {
@@ -190,16 +209,24 @@ p {
 	align-items: center;
 }
 
-.flex-gap-3 {
+.flex-gap-1 {
+	gap: 1rem;
+}
+
+.flex-gap-2 {
 	gap: 2rem;
 }
 
-.flex-gap-4 {
+.flex-gap-3 {
 	gap: 3rem;
 }
 
-.flex-gap-5 {
+.flex-gap-4 {
 	gap: 4rem;
+}
+
+.flex-gap-5 {
+	gap: 5rem;
 }
 
 .flex-wrap {

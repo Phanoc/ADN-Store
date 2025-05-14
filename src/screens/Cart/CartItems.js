@@ -1,19 +1,27 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { AppContext } from '../../AppContext';
 import './CartItems.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
-const CartItems = () => {
-	const { cartItems } = useContext(AppContext);
+const CartItems = (props) => {
+	const { cartItems, deleteAddedItem } = useContext(AppContext);
+
+	useEffect(() => {
+		props.onPassingItemList(cartItems);
+	}, [cartItems, props.onPassingItemList]);
 
 	return (
-		<div className='cart-item'>
-			{cartItems.length > 0 ? (
-				<div className='flex flex-col'>
-					{cartItems.map((item) => {
+		<div className='cart-items'>
+			{cartItems?.length > 0 ? (
+				<div className='flex flex-col cart-items-control'>
+					{cartItems.map((item, index) => {
 						return (
-							<div key={item.id} className='grid'>
+							<div
+								key={`${item.id}-${item.selectedSize}-${index}`}
+								className='grid cart-item'
+							>
 								<img src={item.image} alt='' className='item-img' />
 								<div>
 									<h3 className='lead mb-2'>{item.name}</h3>
@@ -26,7 +34,10 @@ const CartItems = () => {
 									</p>
 								</div>
 								<p className='lead color-primary'>${item.price}.00</p>
-								<div className='delete-item-btn '>
+								<div
+									className='delete-item-btn'
+									onClick={() => deleteAddedItem(item.id, item.selectedSize)}
+								>
 									<FontAwesomeIcon icon={faXmark} />
 								</div>
 							</div>
@@ -34,7 +45,21 @@ const CartItems = () => {
 					})}
 				</div>
 			) : (
-				<p style={{ color: 'black' }}>Chua co gi trong gio hang</p>
+				<div
+					className='flex justify-center items-center'
+					style={{ width: '100%' }}
+				>
+					<div className='text-center'>
+						<h3 className='fs-md mb-2'>Your Shopping Cart is Empty</h3>
+						<Link
+							to='/home'
+							className='btn btn-primary lead'
+							style={{ width: '100%' }}
+						>
+							Continue Shopping
+						</Link>
+					</div>
+				</div>
 			)}
 		</div>
 	);

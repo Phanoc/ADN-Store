@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CartItems from './CartItems';
+import CartOrder from './CartOrder';
+import './Cart.css';
 
 const Cart = () => {
+	const [itemsList, setItemsList] = useState();
+	const passingItemListHandler = (list) => {
+		setItemsList(list);
+		console.log(list);
+	};
+
 	return (
 		<div className='container cart'>
-			<div className='grid-2-col'>
-				<div className='flex flex col'>
-					<CartItems />
-				</div>
+			<div
+				className={`flex 
+					${itemsList?.length > 0 ? '' : 'flex-col'}`}
+			>
+				<CartItems onPassingItemList={passingItemListHandler} />
+				{itemsList?.length > 0 && <CartOrder items={itemsList} />}
 			</div>
 		</div>
 	);

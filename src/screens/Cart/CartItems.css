@@ -1,7 +1,20 @@
-.cart-item .grid {
-	grid-template-columns: 1.5fr 4fr 1fr 1fr;
+.cart-items {
+	height: 100%;
+}
+
+.cart-items .grid {
+	grid-template-columns: 1.5fr 4fr 1fr 0.1fr;
 	justify-items: flex-start;
 	width: 100%;
+}
+
+.cart-items-control .cart-item:first-child {
+	border-top: 1px solid #ddd;
+}
+
+.cart-items-control .cart-item {
+	padding: 1rem 0;
+	border-bottom: 1px solid #ddd;
 }
 
 .item-img {

@@ -4,13 +4,24 @@ export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
 	const [club, setClub] = useState('Chelsea');
-	const [globalSearchTerm, setGlobalSearchTerm] = useState(''); // Thêm state cho tìm kiếm toàn cục
-	const [cartCount, setCartCount] = useState(0); // Add cartCount state
+	const [globalSearchTerm, setGlobalSearchTerm] = useState('');
+	const [cartCount, setCartCount] = useState(0);
 	const [cartItems, setCartItems] = useState([]);
 	const [gender, setGender] = useState('All');
 
 	const addToCart = (item) => {
 		setCartItems((prevItems) => [...prevItems, item]);
+	};
+
+	const deleteAddedItem = (id, selectedSize) => {
+		console.log('Before deletion:', cartItems);
+		console.log('Deleting item with:', id, selectedSize);
+		setCartItems((prevItems) =>
+			prevItems.filter(
+				(item) => !(item.id === id && item.selectedSize === selectedSize)
+			)
+		);
+		console.log('item deleted');
 	};
 
 	return (
@@ -27,6 +38,7 @@ export const AppProvider = ({ children }) => {
 				addToCart,
 				gender,
 				setGender,
+				deleteAddedItem,
 			}}
 		>
 			{children}

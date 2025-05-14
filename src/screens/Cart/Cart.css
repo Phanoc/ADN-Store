@@ -1,0 +1,9 @@
+.cart,
+.cart .grid-2-col {
+	width: 100%;
+	height: 400px;
+}
+
+.cart > .flex {
+	gap: 12rem;
+}

@@ -43,13 +43,14 @@ const Description = () => {
 					</p>
 					<DescriptionOption
 						key={renderedProduct.id}
+						id={renderedProduct.id}
 						name={renderedProduct.name}
 						description={renderedProduct.description}
 						image={renderedProduct.image1}
 						price={renderedProduct.price}
 					/>
 					<Link to='/home'>
-						<p className='fs-sm linked-text'>Tiếp tục mua sắm</p>
+						<p className='fs-sm linked-text color-primary'>CONTINUE SHOPPING</p>
 					</Link>
 				</div>
 			</div>
